@@ -11,6 +11,7 @@ char letter;
 
   cout<<"What character do you want to know about?\n";
   cin>>letter;
+
   //when user's entry is between A-Z...
   if (letter>='A' && letter<='Z')
   {
@@ -24,11 +25,11 @@ char letter;
   else
   {
   //in all other cases...
-  cout<<" "<<letter<<" !? Pssh. What are you talking about?\n";
+  cout<<" "<<letter<<"?! Pssh. What are you talking about?\n";
   }
   //no matter what they enter...
-  cout<<"The ASCII value is:\n ";
-  cout<<letter<<endl;
+  cout<<"The ASCII value is: ";
+  cout<<(int)letter<<endl;
 
   return 0;
 }
